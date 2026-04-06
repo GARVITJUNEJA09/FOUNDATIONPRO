@@ -1,0 +1,1 @@
+print("Database setup file")
