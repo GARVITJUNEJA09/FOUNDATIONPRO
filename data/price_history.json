@@ -1,0 +1,38 @@
+[
+    {
+        "history_id": 1,
+        "material_id": 1,
+        "price": 350.0,
+        "changed_on": "2026-04-01 09:00:00"
+    },
+    {
+        "history_id": 2,
+        "material_id": 1,
+        "price": 360.0,
+        "changed_on": "2026-04-05 09:00:00"
+    },
+    {
+        "history_id": 3,
+        "material_id": 1,
+        "price": 380.0,
+        "changed_on": "2026-04-10 09:00:00"
+    },
+    {
+        "history_id": 4,
+        "material_id": 2,
+        "price": 600.0,
+        "changed_on": "2026-04-01 10:00:00"
+    },
+    {
+        "history_id": 5,
+        "material_id": 2,
+        "price": 620.0,
+        "changed_on": "2026-04-06 10:00:00"
+    },
+    {
+        "history_id": 6,
+        "material_id": 2,
+        "price": 650.0,
+        "changed_on": "2026-04-10 10:00:00"
+    }
+]

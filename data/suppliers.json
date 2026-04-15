@@ -1,0 +1,20 @@
+[
+    {
+        "supplier_id": 1,
+        "supplier_name": "Sharma Cement Traders",
+        "contact_person": "Rakesh Sharma",
+        "phone": "9876543210",
+        "email": "sharma.cement@gmail.com",
+        "address": "Civil Lines, Bareilly",
+        "created_at": "2026-04-10 10:00:00"
+    },
+    {
+        "supplier_id": 2,
+        "supplier_name": "Gupta Steel Works",
+        "contact_person": "Amit Gupta",
+        "phone": "9812345678",
+        "email": "gupta.steel@gmail.com",
+        "address": "CB Ganj, Bareilly",
+        "created_at": "2026-04-10 11:00:00"
+    }
+]

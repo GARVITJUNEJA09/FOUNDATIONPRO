@@ -1,0 +1,25 @@
+[
+    {
+        "bill_id": 1,
+        "customer_name": "Rahul Verma",
+        "customer_phone": "9898989898",
+        "bill_date": "2026-04-12 14:20:00",
+        "total_amount": 1410.0,
+        "items": [
+            {
+                "material_id": 1,
+                "material_name": "Cement Bag",
+                "quantity": 2,
+                "unit_price": 380.0,
+                "line_total": 760.0
+            },
+            {
+                "material_id": 2,
+                "material_name": "TMT Steel Rod",
+                "quantity": 1,
+                "unit_price": 650.0,
+                "line_total": 650.0
+            }
+        ]
+    }
+]

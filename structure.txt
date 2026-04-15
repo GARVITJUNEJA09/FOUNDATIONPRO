@@ -1,17 +1,17 @@
-FoundationPro/
+FOUNDATION_PRO
 │
 ├── app.py
 ├── storage.py
 ├── utils.py
 ├── requirements.txt
-├── data/
+├── data
 │   ├── suppliers.json
 │   ├── materials.json
 │   ├── bills.json
 │   └── price_history.json
-└── pages/
-    ├── 1_📦_Materials.py
-    ├── 2_🚚_Suppliers.py
-    ├── 3_🧾_Billing.py
-    ├── 4_📊_Analytics.py
-    └── 5_🔮_Prediction.py
+└── pages
+    ├── 1_materials.py
+    ├── 2_suppliers.py
+    ├── 3_billing.py
+    ├── 4_analytics.py
+    └── 5_prediction.py
