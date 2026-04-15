@@ -1,0 +1,13 @@
+foundationpro/
+│
+├── app.py
+├── database.py
+├── foundationpro.db
+├── pages/
+│   ├── dashboard.py
+│   ├── materials.py
+│   ├── suppliers.py
+│   ├── billing.py
+│   ├── analytics.py
+│   └── prediction.py
+└── invoices/
