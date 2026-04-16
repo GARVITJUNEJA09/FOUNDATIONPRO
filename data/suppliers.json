@@ -16,5 +16,14 @@
         "email": "gupta.steel@gmail.com",
         "address": "CB Ganj, Bareilly",
         "created_at": "2026-04-10 11:00:00"
+    },
+    {
+        "supplier_id": 3,
+        "supplier_name": "FARDSDFSAF",
+        "contact_person": "AFBAEIYFBAE",
+        "phone": "44134313",
+        "email": "GARVIT @AFA",
+        "address": "DEHRADUN BIDHOLI\n",
+        "created_at": "2026-04-16 12:23:00"
     }
 ]

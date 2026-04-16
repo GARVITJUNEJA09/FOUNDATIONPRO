@@ -34,5 +34,23 @@
         "material_id": 2,
         "price": 650.0,
         "changed_on": "2026-04-10 10:00:00"
+    },
+    {
+        "history_id": 7,
+        "material_id": 4,
+        "price": 6.0,
+        "changed_on": "2026-04-15 22:13:39"
+    },
+    {
+        "history_id": 8,
+        "material_id": 5,
+        "price": 6.0,
+        "changed_on": "2026-04-15 22:13:49"
+    },
+    {
+        "history_id": 9,
+        "material_id": 6,
+        "price": 1234.24,
+        "changed_on": "2026-04-16 12:22:22"
     }
 ]

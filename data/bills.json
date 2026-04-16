@@ -21,5 +21,37 @@
                 "line_total": 650.0
             }
         ]
+    },
+    {
+        "bill_id": 2,
+        "customer_name": "garvit",
+        "customer_phone": "91345678989",
+        "bill_date": "2026-04-15 22:14:31",
+        "total_amount": 3250.0,
+        "items": [
+            {
+                "material_id": 2,
+                "material_name": "TMT Steel Rod",
+                "quantity": 5,
+                "unit_price": 650.0,
+                "line_total": 3250.0
+            }
+        ]
+    },
+    {
+        "bill_id": 3,
+        "customer_name": "DGQSDQ",
+        "customer_phone": "3W484W8",
+        "bill_date": "2026-04-16 12:36:45",
+        "total_amount": 1900.0,
+        "items": [
+            {
+                "material_id": 1,
+                "material_name": "Cement Bag",
+                "quantity": 5,
+                "unit_price": 380.0,
+                "line_total": 1900.0
+            }
+        ]
     }
 ]

@@ -4,20 +4,20 @@
         "material_name": "Cement Bag",
         "category": "Cement",
         "unit": "bag",
-        "stock_quantity": 120,
+        "stock_quantity": 115,
         "current_price": 380.0,
         "supplier_id": 1,
-        "last_updated": "2026-04-10 10:30:00"
+        "last_updated": "2026-04-16 12:36:45"
     },
     {
         "material_id": 2,
         "material_name": "TMT Steel Rod",
         "category": "Steel",
         "unit": "piece",
-        "stock_quantity": 75,
+        "stock_quantity": 70,
         "current_price": 650.0,
         "supplier_id": 2,
-        "last_updated": "2026-04-10 11:30:00"
+        "last_updated": "2026-04-15 22:14:31"
     },
     {
         "material_id": 3,
@@ -28,5 +28,35 @@
         "current_price": 12.0,
         "supplier_id": 1,
         "last_updated": "2026-04-10 12:00:00"
+    },
+    {
+        "material_id": 4,
+        "material_name": "xyz",
+        "category": "elecctrical",
+        "unit": "bag",
+        "stock_quantity": 5,
+        "current_price": 6.0,
+        "supplier_id": 1,
+        "last_updated": "2026-04-15 22:13:39"
+    },
+    {
+        "material_id": 5,
+        "material_name": "xyz",
+        "category": "elecctrical",
+        "unit": "ton",
+        "stock_quantity": 5,
+        "current_price": 6.0,
+        "supplier_id": 1,
+        "last_updated": "2026-04-15 22:13:49"
+    },
+    {
+        "material_id": 6,
+        "material_name": "ABC",
+        "category": "TILES",
+        "unit": "ton",
+        "stock_quantity": 5,
+        "current_price": 1234.24,
+        "supplier_id": 2,
+        "last_updated": "2026-04-16 12:22:22"
     }
 ]
