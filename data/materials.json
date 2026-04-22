@@ -1,62 +1,402 @@
 [
-    {
-        "material_id": 1,
-        "material_name": "Cement Bag",
-        "category": "Cement",
-        "unit": "bag",
-        "stock_quantity": 115,
-        "current_price": 380.0,
-        "supplier_id": 1,
-        "last_updated": "2026-04-16 12:36:45"
-    },
-    {
-        "material_id": 2,
-        "material_name": "TMT Steel Rod",
-        "category": "Steel",
-        "unit": "piece",
-        "stock_quantity": 70,
-        "current_price": 650.0,
-        "supplier_id": 2,
-        "last_updated": "2026-04-15 22:14:31"
-    },
-    {
-        "material_id": 3,
-        "material_name": "Sand",
-        "category": "Aggregate",
-        "unit": "kg",
-        "stock_quantity": 500,
-        "current_price": 12.0,
-        "supplier_id": 1,
-        "last_updated": "2026-04-10 12:00:00"
-    },
-    {
-        "material_id": 4,
-        "material_name": "xyz",
-        "category": "elecctrical",
-        "unit": "bag",
-        "stock_quantity": 5,
-        "current_price": 6.0,
-        "supplier_id": 1,
-        "last_updated": "2026-04-15 22:13:39"
-    },
-    {
-        "material_id": 5,
-        "material_name": "xyz",
-        "category": "elecctrical",
-        "unit": "ton",
-        "stock_quantity": 5,
-        "current_price": 6.0,
-        "supplier_id": 1,
-        "last_updated": "2026-04-15 22:13:49"
-    },
-    {
-        "material_id": 6,
-        "material_name": "ABC",
-        "category": "TILES",
-        "unit": "ton",
-        "stock_quantity": 5,
-        "current_price": 1234.24,
-        "supplier_id": 2,
-        "last_updated": "2026-04-16 12:22:22"
-    }
+  {
+    "material_id": 1,
+    "material_name": "OPC Cement 43 Grade",
+    "category": "Cement",
+    "unit": "Bag",
+    "stock_quantity": 420,
+    "current_price": 385,
+    "supplier_id": 1,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 2,
+    "material_name": "OPC Cement 53 Grade",
+    "category": "Cement",
+    "unit": "Bag",
+    "stock_quantity": 360,
+    "current_price": 405,
+    "supplier_id": 2,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 3,
+    "material_name": "PPC Cement",
+    "category": "Cement",
+    "unit": "Bag",
+    "stock_quantity": 390,
+    "current_price": 365,
+    "supplier_id": 3,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 4,
+    "material_name": "White Cement",
+    "category": "Cement",
+    "unit": "Bag",
+    "stock_quantity": 120,
+    "current_price": 620,
+    "supplier_id": 4,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 5,
+    "material_name": "River Sand",
+    "category": "Sand",
+    "unit": "Ton",
+    "stock_quantity": 780,
+    "current_price": 1550,
+    "supplier_id": 5,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 6,
+    "material_name": "M-Sand",
+    "category": "Sand",
+    "unit": "Ton",
+    "stock_quantity": 640,
+    "current_price": 1750,
+    "supplier_id": 6,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 7,
+    "material_name": "Coarse Sand",
+    "category": "Sand",
+    "unit": "Ton",
+    "stock_quantity": 510,
+    "current_price": 1490,
+    "supplier_id": 7,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 8,
+    "material_name": "10mm Aggregate",
+    "category": "Aggregate",
+    "unit": "Ton",
+    "stock_quantity": 900,
+    "current_price": 1450,
+    "supplier_id": 8,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 9,
+    "material_name": "20mm Aggregate",
+    "category": "Aggregate",
+    "unit": "Ton",
+    "stock_quantity": 860,
+    "current_price": 1400,
+    "supplier_id": 9,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 10,
+    "material_name": "Stone Dust",
+    "category": "Aggregate",
+    "unit": "Ton",
+    "stock_quantity": 700,
+    "current_price": 1180,
+    "supplier_id": 10,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 11,
+    "material_name": "TMT Steel Rod 8mm",
+    "category": "Steel",
+    "unit": "Kg",
+    "stock_quantity": 1200,
+    "current_price": 58,
+    "supplier_id": 11,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 12,
+    "material_name": "TMT Steel Rod 10mm",
+    "category": "Steel",
+    "unit": "Kg",
+    "stock_quantity": 1150,
+    "current_price": 61,
+    "supplier_id": 12,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 13,
+    "material_name": "TMT Steel Rod 12mm",
+    "category": "Steel",
+    "unit": "Kg",
+    "stock_quantity": 980,
+    "current_price": 64,
+    "supplier_id": 13,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 14,
+    "material_name": "TMT Steel Rod 16mm",
+    "category": "Steel",
+    "unit": "Kg",
+    "stock_quantity": 820,
+    "current_price": 66,
+    "supplier_id": 14,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 15,
+    "material_name": "Binding Wire",
+    "category": "Steel",
+    "unit": "Kg",
+    "stock_quantity": 320,
+    "current_price": 72,
+    "supplier_id": 15,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 16,
+    "material_name": "Steel Nails",
+    "category": "Steel",
+    "unit": "Kg",
+    "stock_quantity": 250,
+    "current_price": 84,
+    "supplier_id": 16,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 17,
+    "material_name": "Red Bricks",
+    "category": "Bricks",
+    "unit": "Piece",
+    "stock_quantity": 18000,
+    "current_price": 8,
+    "supplier_id": 17,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 18,
+    "material_name": "Fly Ash Bricks",
+    "category": "Bricks",
+    "unit": "Piece",
+    "stock_quantity": 22000,
+    "current_price": 10,
+    "supplier_id": 18,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 19,
+    "material_name": "Clay Bricks",
+    "category": "Bricks",
+    "unit": "Piece",
+    "stock_quantity": 20000,
+    "current_price": 9,
+    "supplier_id": 19,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 20,
+    "material_name": "AAC Blocks",
+    "category": "Blocks",
+    "unit": "Piece",
+    "stock_quantity": 9600,
+    "current_price": 42,
+    "supplier_id": 20,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 21,
+    "material_name": "Cement Blocks",
+    "category": "Blocks",
+    "unit": "Piece",
+    "stock_quantity": 8400,
+    "current_price": 38,
+    "supplier_id": 1,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 22,
+    "material_name": "Paver Blocks",
+    "category": "Blocks",
+    "unit": "Piece",
+    "stock_quantity": 7000,
+    "current_price": 24,
+    "supplier_id": 2,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 23,
+    "material_name": "Plywood Sheet",
+    "category": "Wood",
+    "unit": "Sheet",
+    "stock_quantity": 140,
+    "current_price": 1750,
+    "supplier_id": 3,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 24,
+    "material_name": "Shuttering Plywood",
+    "category": "Wood",
+    "unit": "Sheet",
+    "stock_quantity": 110,
+    "current_price": 1850,
+    "supplier_id": 4,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 25,
+    "material_name": "Door Frame Wood",
+    "category": "Wood",
+    "unit": "Piece",
+    "stock_quantity": 95,
+    "current_price": 2650,
+    "supplier_id": 5,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 26,
+    "material_name": "PVC Pipe",
+    "category": "Plumbing",
+    "unit": "Meter",
+    "stock_quantity": 520,
+    "current_price": 95,
+    "supplier_id": 6,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 27,
+    "material_name": "GI Pipe",
+    "category": "Plumbing",
+    "unit": "Meter",
+    "stock_quantity": 410,
+    "current_price": 155,
+    "supplier_id": 7,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 28,
+    "material_name": "CPVC Pipe",
+    "category": "Plumbing",
+    "unit": "Meter",
+    "stock_quantity": 390,
+    "current_price": 125,
+    "supplier_id": 8,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 29,
+    "material_name": "Tile Adhesive",
+    "category": "Chemical",
+    "unit": "Bag",
+    "stock_quantity": 210,
+    "current_price": 420,
+    "supplier_id": 9,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 30,
+    "material_name": "Waterproofing Compound",
+    "category": "Chemical",
+    "unit": "Litre",
+    "stock_quantity": 160,
+    "current_price": 780,
+    "supplier_id": 10,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 31,
+    "material_name": "Wall Putty",
+    "category": "Chemical",
+    "unit": "Bag",
+    "stock_quantity": 240,
+    "current_price": 360,
+    "supplier_id": 11,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 32,
+    "material_name": "Paint Primer",
+    "category": "Chemical",
+    "unit": "Litre",
+    "stock_quantity": 180,
+    "current_price": 240,
+    "supplier_id": 12,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 33,
+    "material_name": "Electrical Conduit Pipe",
+    "category": "Electrical",
+    "unit": "Meter",
+    "stock_quantity": 600,
+    "current_price": 48,
+    "supplier_id": 13,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 34,
+    "material_name": "Copper Wire 1.5mm",
+    "category": "Electrical",
+    "unit": "Roll",
+    "stock_quantity": 150,
+    "current_price": 940,
+    "supplier_id": 14,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 35,
+    "material_name": "Switch Board",
+    "category": "Electrical",
+    "unit": "Piece",
+    "stock_quantity": 220,
+    "current_price": 175,
+    "supplier_id": 15,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 36,
+    "material_name": "Cement Primer",
+    "category": "Chemical",
+    "unit": "Litre",
+    "stock_quantity": 130,
+    "current_price": 510,
+    "supplier_id": 16,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 37,
+    "material_name": "Glass Wool Sheet",
+    "category": "Insulation",
+    "unit": "Sheet",
+    "stock_quantity": 90,
+    "current_price": 680,
+    "supplier_id": 17,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 38,
+    "material_name": "Bitumen Sheet",
+    "category": "Roofing",
+    "unit": "Roll",
+    "stock_quantity": 75,
+    "current_price": 1250,
+    "supplier_id": 18,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 39,
+    "material_name": "MS Pipe",
+    "category": "Plumbing",
+    "unit": "Meter",
+    "stock_quantity": 340,
+    "current_price": 210,
+    "supplier_id": 19,
+    "last_updated": "2026-04-22"
+  },
+  {
+    "material_id": 40,
+    "material_name": "Plaster of Paris",
+    "category": "Chemical",
+    "unit": "Bag",
+    "stock_quantity": 260,
+    "current_price": 290,
+    "supplier_id": 20,
+    "last_updated": "2026-04-22"
+  }
 ]

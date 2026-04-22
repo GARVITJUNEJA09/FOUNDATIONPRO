@@ -5,60 +5,90 @@ from storage import load_data
 
 st.title("Price Analytics")
 
-# Load materials and their price history from JSON files.
 materials = load_data("materials")
 price_history = load_data("price_history")
 
 if not materials or not price_history:
     st.info("Not enough data available for analytics.")
 else:
-    # Build a quick lookup so we can show material names
-    # instead of only material IDs in the chart and table.
-    material_map = {
-        material["material_id"]: material["material_name"]
-        for material in materials
-    }
+    material_map = {material["material_id"]: material["material_name"] for material in materials}
 
-    # Turn raw history records into a cleaner table for pandas and Plotly.
     history_rows = []
     for record in price_history:
         history_rows.append({
-            "history_id": record["history_id"],
-            "material_id": record["material_id"],
-            "material_name": material_map.get(record["material_id"], "Unknown"),
-            "price": record["price"],
-            "changed_on": record["changed_on"]
+            "History ID": record["history_id"],
+            "Material ID": record["material_id"],
+            "Material": material_map.get(record["material_id"], "Unknown"),
+            "Price": float(record["price"]),
+            "Date": record["changed_on"]
         })
 
     df = pd.DataFrame(history_rows)
+    df["Date"] = pd.to_datetime(df["Date"])
+    df = df.sort_values("Date")
 
-    # Convert the saved date text into actual datetime values
-    # so sorting and charting work properly.
-    df["changed_on"] = pd.to_datetime(df["changed_on"])
-    df = df.sort_values("changed_on")
+    categories = sorted({material["category"] for material in materials})
+    material_names = sorted(df["Material"].unique())
 
-    # Let the user focus on one material at a time.
-    material_names = sorted(df["material_name"].unique())
-    selected_material = st.selectbox("Select Material", material_names)
+    c1, c2 = st.columns(2)
+    with c1:
+        selected_category = st.selectbox("Filter by Category", ["All"] + categories)
+    with c2:
+        selected_material = st.selectbox("Select Material", material_names)
 
-    filtered_df = df[df["material_name"] == selected_material]
+    if selected_category != "All":
+        allowed_material_ids = {
+            material["material_id"]
+            for material in materials
+            if material["category"] == selected_category
+        }
+        df = df[df["Material ID"].isin(allowed_material_ids)]
 
-    # Line chart works best here because we want to show price change over time.
-    fig = px.line(
-        filtered_df,
-        x="changed_on",
-        y="price",
-        title=f"Price History for {selected_material}",
-        markers=True
-    )
+    filtered_df = df[df["Material"] == selected_material]
 
-    fig.update_layout(
-        xaxis_title="Date",
-        yaxis_title="Price",
-        template="plotly_white"
-    )
+    if filtered_df.empty:
+        st.warning("No records found for this filter combination.")
+    else:
+        latest_price = filtered_df["Price"].iloc[-1]
+        avg_price = round(filtered_df["Price"].mean(), 2)
+        min_price = filtered_df["Price"].min()
+        max_price = filtered_df["Price"].max()
 
-    st.plotly_chart(fig, use_container_width=True)
+        m1, m2, m3, m4 = st.columns(4)
+        with m1:
+            st.metric("Latest Price", latest_price)
+        with m2:
+            st.metric("Average Price", avg_price)
+        with m3:
+            st.metric("Min Price", min_price)
+        with m4:
+            st.metric("Max Price", max_price)
 
-    st.subheader("Price History Table")
-    st.dataframe(filtered_df, use_container_width=True)
+        fig = px.line(
+            filtered_df,
+            x="Date",
+            y="Price",
+            title=f"Price History for {selected_material}",
+            markers=True
+        )
+        fig.update_layout(template="plotly_white", xaxis_title="Date", yaxis_title="Price")
+        st.plotly_chart(fig, use_container_width=True)
+
+        st.subheader("Material Price History")
+        st.dataframe(filtered_df, use_container_width=True)
+
+        trend_df = (
+            df.groupby("Material", as_index=False)["Price"]
+            .mean()
+            .sort_values("Price", ascending=False)
+            .head(10)
+        )
+
+        bar_fig = px.bar(
+            trend_df,
+            x="Material",
+            y="Price",
+            title="Top 10 Materials by Average Price"
+        )
+        bar_fig.update_layout(template="plotly_white", xaxis_title="Material", yaxis_title="Average Price")
+        st.plotly_chart(bar_fig, use_container_width=True)

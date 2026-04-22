@@ -1,56 +1,1922 @@
 [
-    {
-        "history_id": 1,
-        "material_id": 1,
-        "price": 350.0,
-        "changed_on": "2026-04-01 09:00:00"
-    },
-    {
-        "history_id": 2,
-        "material_id": 1,
-        "price": 360.0,
-        "changed_on": "2026-04-05 09:00:00"
-    },
-    {
-        "history_id": 3,
-        "material_id": 1,
-        "price": 380.0,
-        "changed_on": "2026-04-10 09:00:00"
-    },
-    {
-        "history_id": 4,
-        "material_id": 2,
-        "price": 600.0,
-        "changed_on": "2026-04-01 10:00:00"
-    },
-    {
-        "history_id": 5,
-        "material_id": 2,
-        "price": 620.0,
-        "changed_on": "2026-04-06 10:00:00"
-    },
-    {
-        "history_id": 6,
-        "material_id": 2,
-        "price": 650.0,
-        "changed_on": "2026-04-10 10:00:00"
-    },
-    {
-        "history_id": 7,
-        "material_id": 4,
-        "price": 6.0,
-        "changed_on": "2026-04-15 22:13:39"
-    },
-    {
-        "history_id": 8,
-        "material_id": 5,
-        "price": 6.0,
-        "changed_on": "2026-04-15 22:13:49"
-    },
-    {
-        "history_id": 9,
-        "material_id": 6,
-        "price": 1234.24,
-        "changed_on": "2026-04-16 12:22:22"
-    }
+  {
+    "history_id": 1,
+    "material_id": 1,
+    "price": 372,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 2,
+    "material_id": 1,
+    "price": 378,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 3,
+    "material_id": 1,
+    "price": 381,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 4,
+    "material_id": 1,
+    "price": 385,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 5,
+    "material_id": 1,
+    "price": 387,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 6,
+    "material_id": 1,
+    "price": 389,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 7,
+    "material_id": 1,
+    "price": 392,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 8,
+    "material_id": 1,
+    "price": 395,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 9,
+    "material_id": 2,
+    "price": 395,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 10,
+    "material_id": 2,
+    "price": 398,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 11,
+    "material_id": 2,
+    "price": 400,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 12,
+    "material_id": 2,
+    "price": 405,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 13,
+    "material_id": 2,
+    "price": 408,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 14,
+    "material_id": 2,
+    "price": 410,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 15,
+    "material_id": 2,
+    "price": 412,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 16,
+    "material_id": 2,
+    "price": 415,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 17,
+    "material_id": 3,
+    "price": 356,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 18,
+    "material_id": 3,
+    "price": 360,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 19,
+    "material_id": 3,
+    "price": 363,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 20,
+    "material_id": 3,
+    "price": 365,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 21,
+    "material_id": 3,
+    "price": 367,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 22,
+    "material_id": 3,
+    "price": 369,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 23,
+    "material_id": 3,
+    "price": 372,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 24,
+    "material_id": 3,
+    "price": 375,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 25,
+    "material_id": 4,
+    "price": 605,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 26,
+    "material_id": 4,
+    "price": 610,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 27,
+    "material_id": 4,
+    "price": 615,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 28,
+    "material_id": 4,
+    "price": 620,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 29,
+    "material_id": 4,
+    "price": 625,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 30,
+    "material_id": 4,
+    "price": 628,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 31,
+    "material_id": 4,
+    "price": 630,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 32,
+    "material_id": 4,
+    "price": 635,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 33,
+    "material_id": 5,
+    "price": 1490,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 34,
+    "material_id": 5,
+    "price": 1515,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 35,
+    "material_id": 5,
+    "price": 1530,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 36,
+    "material_id": 5,
+    "price": 1550,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 37,
+    "material_id": 5,
+    "price": 1565,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 38,
+    "material_id": 5,
+    "price": 1580,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 39,
+    "material_id": 5,
+    "price": 1590,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 40,
+    "material_id": 5,
+    "price": 1605,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 41,
+    "material_id": 6,
+    "price": 1680,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 42,
+    "material_id": 6,
+    "price": 1700,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 43,
+    "material_id": 6,
+    "price": 1730,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 44,
+    "material_id": 6,
+    "price": 1750,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 45,
+    "material_id": 6,
+    "price": 1765,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 46,
+    "material_id": 6,
+    "price": 1780,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 47,
+    "material_id": 6,
+    "price": 1795,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 48,
+    "material_id": 6,
+    "price": 1810,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 49,
+    "material_id": 7,
+    "price": 1450,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 50,
+    "material_id": 7,
+    "price": 1460,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 51,
+    "material_id": 7,
+    "price": 1475,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 52,
+    "material_id": 7,
+    "price": 1490,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 53,
+    "material_id": 7,
+    "price": 1500,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 54,
+    "material_id": 7,
+    "price": 1510,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 55,
+    "material_id": 7,
+    "price": 1520,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 56,
+    "material_id": 7,
+    "price": 1535,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 57,
+    "material_id": 8,
+    "price": 1420,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 58,
+    "material_id": 8,
+    "price": 1430,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 59,
+    "material_id": 8,
+    "price": 1440,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 60,
+    "material_id": 8,
+    "price": 1450,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 61,
+    "material_id": 8,
+    "price": 1460,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 62,
+    "material_id": 8,
+    "price": 1470,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 63,
+    "material_id": 8,
+    "price": 1480,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 64,
+    "material_id": 8,
+    "price": 1490,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 65,
+    "material_id": 9,
+    "price": 1385,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 66,
+    "material_id": 9,
+    "price": 1390,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 67,
+    "material_id": 9,
+    "price": 1395,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 68,
+    "material_id": 9,
+    "price": 1400,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 69,
+    "material_id": 9,
+    "price": 1405,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 70,
+    "material_id": 9,
+    "price": 1410,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 71,
+    "material_id": 9,
+    "price": 1415,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 72,
+    "material_id": 9,
+    "price": 1420,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 73,
+    "material_id": 10,
+    "price": 1160,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 74,
+    "material_id": 10,
+    "price": 1170,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 75,
+    "material_id": 10,
+    "price": 1180,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 76,
+    "material_id": 10,
+    "price": 1185,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 77,
+    "material_id": 10,
+    "price": 1190,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 78,
+    "material_id": 10,
+    "price": 1195,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 79,
+    "material_id": 10,
+    "price": 1200,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 80,
+    "material_id": 10,
+    "price": 1205,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 81,
+    "material_id": 11,
+    "price": 55,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 82,
+    "material_id": 11,
+    "price": 56,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 83,
+    "material_id": 11,
+    "price": 57,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 84,
+    "material_id": 11,
+    "price": 58,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 85,
+    "material_id": 11,
+    "price": 59,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 86,
+    "material_id": 11,
+    "price": 60,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 87,
+    "material_id": 11,
+    "price": 61,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 88,
+    "material_id": 11,
+    "price": 62,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 89,
+    "material_id": 12,
+    "price": 58,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 90,
+    "material_id": 12,
+    "price": 59,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 91,
+    "material_id": 12,
+    "price": 60,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 92,
+    "material_id": 12,
+    "price": 61,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 93,
+    "material_id": 12,
+    "price": 62,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 94,
+    "material_id": 12,
+    "price": 63,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 95,
+    "material_id": 12,
+    "price": 64,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 96,
+    "material_id": 12,
+    "price": 65,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 97,
+    "material_id": 13,
+    "price": 61,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 98,
+    "material_id": 13,
+    "price": 62,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 99,
+    "material_id": 13,
+    "price": 63,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 100,
+    "material_id": 13,
+    "price": 64,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 101,
+    "material_id": 13,
+    "price": 65,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 102,
+    "material_id": 13,
+    "price": 66,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 103,
+    "material_id": 13,
+    "price": 67,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 104,
+    "material_id": 13,
+    "price": 68,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 105,
+    "material_id": 14,
+    "price": 63,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 106,
+    "material_id": 14,
+    "price": 64,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 107,
+    "material_id": 14,
+    "price": 65,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 108,
+    "material_id": 14,
+    "price": 66,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 109,
+    "material_id": 14,
+    "price": 67,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 110,
+    "material_id": 14,
+    "price": 68,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 111,
+    "material_id": 14,
+    "price": 69,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 112,
+    "material_id": 14,
+    "price": 70,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 113,
+    "material_id": 15,
+    "price": 68,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 114,
+    "material_id": 15,
+    "price": 69,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 115,
+    "material_id": 15,
+    "price": 70,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 116,
+    "material_id": 15,
+    "price": 72,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 117,
+    "material_id": 15,
+    "price": 73,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 118,
+    "material_id": 15,
+    "price": 74,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 119,
+    "material_id": 15,
+    "price": 75,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 120,
+    "material_id": 15,
+    "price": 76,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 121,
+    "material_id": 16,
+    "price": 80,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 122,
+    "material_id": 16,
+    "price": 81,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 123,
+    "material_id": 16,
+    "price": 82,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 124,
+    "material_id": 16,
+    "price": 84,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 125,
+    "material_id": 16,
+    "price": 85,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 126,
+    "material_id": 16,
+    "price": 86,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 127,
+    "material_id": 16,
+    "price": 87,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 128,
+    "material_id": 16,
+    "price": 88,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 129,
+    "material_id": 17,
+    "price": 7.5,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 130,
+    "material_id": 17,
+    "price": 7.6,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 131,
+    "material_id": 17,
+    "price": 7.7,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 132,
+    "material_id": 17,
+    "price": 8.0,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 133,
+    "material_id": 17,
+    "price": 8.1,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 134,
+    "material_id": 17,
+    "price": 8.2,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 135,
+    "material_id": 17,
+    "price": 8.3,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 136,
+    "material_id": 17,
+    "price": 8.4,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 137,
+    "material_id": 18,
+    "price": 9.5,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 138,
+    "material_id": 18,
+    "price": 9.6,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 139,
+    "material_id": 18,
+    "price": 9.7,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 140,
+    "material_id": 18,
+    "price": 10.0,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 141,
+    "material_id": 18,
+    "price": 10.1,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 142,
+    "material_id": 18,
+    "price": 10.2,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 143,
+    "material_id": 18,
+    "price": 10.3,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 144,
+    "material_id": 18,
+    "price": 10.4,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 145,
+    "material_id": 19,
+    "price": 8.4,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 146,
+    "material_id": 19,
+    "price": 8.5,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 147,
+    "material_id": 19,
+    "price": 8.6,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 148,
+    "material_id": 19,
+    "price": 8.8,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 149,
+    "material_id": 19,
+    "price": 8.9,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 150,
+    "material_id": 19,
+    "price": 9.0,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 151,
+    "material_id": 19,
+    "price": 9.1,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 152,
+    "material_id": 19,
+    "price": 9.2,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 153,
+    "material_id": 20,
+    "price": 40,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 154,
+    "material_id": 20,
+    "price": 40.5,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 155,
+    "material_id": 20,
+    "price": 41,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 156,
+    "material_id": 20,
+    "price": 42,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 157,
+    "material_id": 20,
+    "price": 42.5,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 158,
+    "material_id": 20,
+    "price": 43,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 159,
+    "material_id": 20,
+    "price": 43.5,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 160,
+    "material_id": 20,
+    "price": 44,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 161,
+    "material_id": 21,
+    "price": 36,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 162,
+    "material_id": 21,
+    "price": 36.5,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 163,
+    "material_id": 21,
+    "price": 37,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 164,
+    "material_id": 21,
+    "price": 38,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 165,
+    "material_id": 21,
+    "price": 38.5,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 166,
+    "material_id": 21,
+    "price": 39,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 167,
+    "material_id": 21,
+    "price": 39.5,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 168,
+    "material_id": 21,
+    "price": 40,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 169,
+    "material_id": 22,
+    "price": 22,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 170,
+    "material_id": 22,
+    "price": 22.5,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 171,
+    "material_id": 22,
+    "price": 23,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 172,
+    "material_id": 22,
+    "price": 24,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 173,
+    "material_id": 22,
+    "price": 24.5,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 174,
+    "material_id": 22,
+    "price": 25,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 175,
+    "material_id": 22,
+    "price": 25.5,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 176,
+    "material_id": 22,
+    "price": 26,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 177,
+    "material_id": 23,
+    "price": 1650,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 178,
+    "material_id": 23,
+    "price": 1680,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 179,
+    "material_id": 23,
+    "price": 1700,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 180,
+    "material_id": 23,
+    "price": 1750,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 181,
+    "material_id": 23,
+    "price": 1765,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 182,
+    "material_id": 23,
+    "price": 1775,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 183,
+    "material_id": 23,
+    "price": 1785,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 184,
+    "material_id": 23,
+    "price": 1800,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 185,
+    "material_id": 24,
+    "price": 1750,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 186,
+    "material_id": 24,
+    "price": 1780,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 187,
+    "material_id": 24,
+    "price": 1800,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 188,
+    "material_id": 24,
+    "price": 1850,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 189,
+    "material_id": 24,
+    "price": 1865,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 190,
+    "material_id": 24,
+    "price": 1875,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 191,
+    "material_id": 24,
+    "price": 1890,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 192,
+    "material_id": 24,
+    "price": 1900,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 193,
+    "material_id": 25,
+    "price": 2550,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 194,
+    "material_id": 25,
+    "price": 2575,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 195,
+    "material_id": 25,
+    "price": 2600,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 196,
+    "material_id": 25,
+    "price": 2650,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 197,
+    "material_id": 25,
+    "price": 2675,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 198,
+    "material_id": 25,
+    "price": 2690,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 199,
+    "material_id": 25,
+    "price": 2700,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 200,
+    "material_id": 25,
+    "price": 2725,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 201,
+    "material_id": 26,
+    "price": 92,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 202,
+    "material_id": 26,
+    "price": 93,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 203,
+    "material_id": 26,
+    "price": 94,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 204,
+    "material_id": 26,
+    "price": 95,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 205,
+    "material_id": 26,
+    "price": 96,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 206,
+    "material_id": 26,
+    "price": 97,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 207,
+    "material_id": 26,
+    "price": 98,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 208,
+    "material_id": 26,
+    "price": 99,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 209,
+    "material_id": 27,
+    "price": 150,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 210,
+    "material_id": 27,
+    "price": 152,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 211,
+    "material_id": 27,
+    "price": 153,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 212,
+    "material_id": 27,
+    "price": 155,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 213,
+    "material_id": 27,
+    "price": 156,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 214,
+    "material_id": 27,
+    "price": 157,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 215,
+    "material_id": 27,
+    "price": 158,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 216,
+    "material_id": 27,
+    "price": 160,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 217,
+    "material_id": 28,
+    "price": 120,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 218,
+    "material_id": 28,
+    "price": 121,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 219,
+    "material_id": 28,
+    "price": 122,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 220,
+    "material_id": 28,
+    "price": 125,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 221,
+    "material_id": 28,
+    "price": 126,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 222,
+    "material_id": 28,
+    "price": 127,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 223,
+    "material_id": 28,
+    "price": 128,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 224,
+    "material_id": 28,
+    "price": 130,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 225,
+    "material_id": 29,
+    "price": 400,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 226,
+    "material_id": 29,
+    "price": 405,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 227,
+    "material_id": 29,
+    "price": 410,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 228,
+    "material_id": 29,
+    "price": 420,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 229,
+    "material_id": 29,
+    "price": 425,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 230,
+    "material_id": 29,
+    "price": 430,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 231,
+    "material_id": 29,
+    "price": 435,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 232,
+    "material_id": 29,
+    "price": 440,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 233,
+    "material_id": 30,
+    "price": 750,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 234,
+    "material_id": 30,
+    "price": 760,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 235,
+    "material_id": 30,
+    "price": 770,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 236,
+    "material_id": 30,
+    "price": 780,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 237,
+    "material_id": 30,
+    "price": 790,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 238,
+    "material_id": 30,
+    "price": 800,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 239,
+    "material_id": 30,
+    "price": 810,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 240,
+    "material_id": 30,
+    "price": 820,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 241,
+    "material_id": 31,
+    "price": 340,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 242,
+    "material_id": 31,
+    "price": 345,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 243,
+    "material_id": 31,
+    "price": 350,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 244,
+    "material_id": 31,
+    "price": 360,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 245,
+    "material_id": 31,
+    "price": 365,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 246,
+    "material_id": 31,
+    "price": 370,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 247,
+    "material_id": 31,
+    "price": 375,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 248,
+    "material_id": 31,
+    "price": 380,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 249,
+    "material_id": 32,
+    "price": 220,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 250,
+    "material_id": 32,
+    "price": 225,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 251,
+    "material_id": 32,
+    "price": 230,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 252,
+    "material_id": 32,
+    "price": 240,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 253,
+    "material_id": 32,
+    "price": 245,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 254,
+    "material_id": 32,
+    "price": 250,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 255,
+    "material_id": 32,
+    "price": 255,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 256,
+    "material_id": 32,
+    "price": 260,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 257,
+    "material_id": 33,
+    "price": 44,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 258,
+    "material_id": 33,
+    "price": 45,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 259,
+    "material_id": 33,
+    "price": 46,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 260,
+    "material_id": 33,
+    "price": 48,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 261,
+    "material_id": 33,
+    "price": 49,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 262,
+    "material_id": 33,
+    "price": 50,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 263,
+    "material_id": 33,
+    "price": 51,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 264,
+    "material_id": 33,
+    "price": 52,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 265,
+    "material_id": 34,
+    "price": 910,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 266,
+    "material_id": 34,
+    "price": 920,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 267,
+    "material_id": 34,
+    "price": 930,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 268,
+    "material_id": 34,
+    "price": 940,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 269,
+    "material_id": 34,
+    "price": 950,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 270,
+    "material_id": 34,
+    "price": 960,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 271,
+    "material_id": 34,
+    "price": 970,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 272,
+    "material_id": 34,
+    "price": 980,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 273,
+    "material_id": 35,
+    "price": 165,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 274,
+    "material_id": 35,
+    "price": 168,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 275,
+    "material_id": 35,
+    "price": 170,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 276,
+    "material_id": 35,
+    "price": 175,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 277,
+    "material_id": 35,
+    "price": 178,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 278,
+    "material_id": 35,
+    "price": 180,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 279,
+    "material_id": 35,
+    "price": 182,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 280,
+    "material_id": 35,
+    "price": 185,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 281,
+    "material_id": 36,
+    "price": 480,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 282,
+    "material_id": 36,
+    "price": 490,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 283,
+    "material_id": 36,
+    "price": 500,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 284,
+    "material_id": 36,
+    "price": 510,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 285,
+    "material_id": 36,
+    "price": 520,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 286,
+    "material_id": 36,
+    "price": 530,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 287,
+    "material_id": 36,
+    "price": 540,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 288,
+    "material_id": 36,
+    "price": 550,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 289,
+    "material_id": 37,
+    "price": 650,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 290,
+    "material_id": 37,
+    "price": 655,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 291,
+    "material_id": 37,
+    "price": 660,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 292,
+    "material_id": 37,
+    "price": 680,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 293,
+    "material_id": 37,
+    "price": 690,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 294,
+    "material_id": 37,
+    "price": 700,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 295,
+    "material_id": 37,
+    "price": 710,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 296,
+    "material_id": 37,
+    "price": 720,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 297,
+    "material_id": 38,
+    "price": 1180,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 298,
+    "material_id": 38,
+    "price": 1200,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 299,
+    "material_id": 38,
+    "price": 1220,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 300,
+    "material_id": 38,
+    "price": 1250,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 301,
+    "material_id": 38,
+    "price": 1260,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 302,
+    "material_id": 38,
+    "price": 1270,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 303,
+    "material_id": 38,
+    "price": 1280,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 304,
+    "material_id": 38,
+    "price": 1290,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 305,
+    "material_id": 39,
+    "price": 200,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 306,
+    "material_id": 39,
+    "price": 202,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 307,
+    "material_id": 39,
+    "price": 205,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 308,
+    "material_id": 39,
+    "price": 210,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 309,
+    "material_id": 39,
+    "price": 212,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 310,
+    "material_id": 39,
+    "price": 215,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 311,
+    "material_id": 39,
+    "price": 218,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 312,
+    "material_id": 39,
+    "price": 220,
+    "changed_on": "2026-04-19"
+  },
+  {
+    "history_id": 313,
+    "material_id": 40,
+    "price": 270,
+    "changed_on": "2026-03-01"
+  },
+  {
+    "history_id": 314,
+    "material_id": 40,
+    "price": 275,
+    "changed_on": "2026-03-08"
+  },
+  {
+    "history_id": 315,
+    "material_id": 40,
+    "price": 280,
+    "changed_on": "2026-03-15"
+  },
+  {
+    "history_id": 316,
+    "material_id": 40,
+    "price": 290,
+    "changed_on": "2026-03-22"
+  },
+  {
+    "history_id": 317,
+    "material_id": 40,
+    "price": 295,
+    "changed_on": "2026-03-29"
+  },
+  {
+    "history_id": 318,
+    "material_id": 40,
+    "price": 300,
+    "changed_on": "2026-04-05"
+  },
+  {
+    "history_id": 319,
+    "material_id": 40,
+    "price": 305,
+    "changed_on": "2026-04-12"
+  },
+  {
+    "history_id": 320,
+    "material_id": 40,
+    "price": 310,
+    "changed_on": "2026-04-19"
+  }
 ]

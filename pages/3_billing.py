@@ -5,105 +5,129 @@ from utils import generate_invoice_pdf
 
 st.title("Billing System")
 
-# Load all materials so we can build the billing form and check stock.
 materials = load_data("materials")
 
-# Keep the cart inside session_state so it does not disappear
-# every time Streamlit reruns the page.
 if "cart" not in st.session_state:
     st.session_state.cart = []
-
-# Small helper so we can quickly find a material by its ID later.
-material_map = {material["material_id"]: material for material in materials}
 
 if not materials:
     st.warning("Please add materials before creating a bill.")
 else:
+    material_map = {material["material_id"]: material for material in materials}
+
     st.subheader("Customer Details")
-    customer_name = st.text_input("Customer Name")
-    customer_phone = st.text_input("Customer Phone")
+    c1, c2 = st.columns(2)
+    with c1:
+        customer_name = st.text_input("Customer Name")
+    with c2:
+        customer_phone = st.text_input("Customer Phone")
 
-    st.subheader("Add Item to Cart")
+    st.subheader("Add Items to Cart")
 
-    # Show a more user-friendly label in the dropdown
-    # so the user can see material name, stock, and price together.
+    valid_materials = [m for m in materials if m["stock_quantity"] > 0]
     material_options = {
-        f"{material['material_name']} | Stock: {material['stock_quantity']} | Price: {material['current_price']}": material["material_id"]
-        for material in materials
+        f"{m['material_name']} | Stock: {m['stock_quantity']} | Price: {m['current_price']}": m["material_id"]
+        for m in valid_materials
     }
 
-    selected_label = st.selectbox("Select Material", list(material_options.keys()))
-    quantity = st.number_input("Quantity", min_value=1, step=1)
+    if material_options:
+        c3, c4 = st.columns([3, 1])
+        with c3:
+            selected_label = st.selectbox("Select Material", list(material_options.keys()))
+        with c4:
+            quantity = st.number_input("Quantity", min_value=1, step=1, value=1)
 
-    if st.button("Add to Cart"):
-        selected_material_id = material_options[selected_label]
-        selected_material = material_map.get(selected_material_id)
+        if st.button("Add to Cart", use_container_width=True):
+            selected_material_id = material_options[selected_label]
+            existing_item = next(
+                (item for item in st.session_state.cart if item["material_id"] == selected_material_id),
+                None
+            )
 
-        if selected_material is not None:
-            st.session_state.cart.append({
-                "material_id": selected_material["material_id"],
-                "quantity": int(quantity)
-            })
+            if existing_item:
+                existing_item["quantity"] += int(quantity)
+            else:
+                st.session_state.cart.append({
+                    "material_id": selected_material_id,
+                    "quantity": int(quantity)
+                })
+
             st.success("Item added to cart.")
             st.rerun()
+    else:
+        st.info("No materials with available stock.")
 
-st.subheader("Current Cart")
+    st.subheader("Current Cart")
 
-if st.session_state.cart:
-    cart_display = []
-    grand_total = 0
+    if st.session_state.cart:
+        merged_cart = {}
+        for item in st.session_state.cart:
+            merged_cart[item["material_id"]] = merged_cart.get(item["material_id"], 0) + int(item["quantity"])
 
-    # Build a cleaner table for the cart preview.
-    for index, cart_item in enumerate(st.session_state.cart, start=1):
-        selected_material = material_map.get(cart_item["material_id"])
+        cart_display = []
+        grand_total = 0.0
 
-        if selected_material is not None:
-            line_total = cart_item["quantity"] * float(selected_material["current_price"])
-            grand_total += line_total
+        for index, (material_id, qty) in enumerate(merged_cart.items(), start=1):
+            material = material_map.get(material_id)
+            if material:
+                line_total = round(qty * float(material["current_price"]), 2)
+                grand_total += line_total
+                cart_display.append({
+                    "No": index,
+                    "Material": material["material_name"],
+                    "Quantity": qty,
+                    "Unit Price": material["current_price"],
+                    "Line Total": line_total
+                })
 
-            cart_display.append({
-                "No": index,
-                "Material": selected_material["material_name"],
-                "Quantity": cart_item["quantity"],
-                "Unit Price": selected_material["current_price"],
-                "Line Total": line_total
-            })
+        st.dataframe(pd.DataFrame(cart_display), use_container_width=True)
+        st.markdown(f"### Grand Total: Rs. {round(grand_total, 2)}")
 
-    st.dataframe(pd.DataFrame(cart_display), use_container_width=True)
-    st.markdown(f"### Grand Total: Rs. {grand_total}")
+        remove_options = {row["Material"]: row["No"] - 1 for row in cart_display}
+        selected_remove = st.selectbox("Select cart item to remove", ["None"] + list(remove_options.keys()))
 
-    col1, col2 = st.columns(2)
+        c5, c6, c7 = st.columns(3)
 
-    with col1:
-        if st.button("Generate Bill"):
-            try:
-                # This saves the bill and also updates stock in storage.
-                bill = create_bill(customer_name, customer_phone, st.session_state.cart)
-
-                # Generate the invoice PDF after the bill is created successfully.
-                pdf_path = generate_invoice_pdf(bill)
-
-                st.success("Bill generated successfully.")
-
-                # Give the user a download button for the PDF invoice.
-                with open(pdf_path, "rb") as pdf_file:
-                    st.download_button(
-                        label="Download Invoice PDF",
-                        data=pdf_file,
-                        file_name=f"invoice_{bill['bill_id']}.pdf",
-                        mime="application/pdf"
+        with c5:
+            if st.button("Remove Selected", use_container_width=True):
+                if selected_remove != "None":
+                    material_name = selected_remove
+                    selected_material_id = next(
+                        material["material_id"]
+                        for material in materials
+                        if material["material_name"] == material_name
                     )
+                    st.session_state.cart = [
+                        item for item in st.session_state.cart
+                        if item["material_id"] != selected_material_id
+                    ]
+                    st.warning("Item removed from cart.")
+                    st.rerun()
 
-                # Clear the cart after a successful bill.
+        with c6:
+            if st.button("Clear Cart", use_container_width=True):
                 st.session_state.cart = []
+                st.warning("Cart cleared.")
+                st.rerun()
 
-            except ValueError as error:
-                st.error(str(error))
+        with c7:
+            if st.button("Generate Bill", use_container_width=True):
+                try:
+                    bill = create_bill(customer_name, customer_phone, st.session_state.cart)
+                    pdf_path = generate_invoice_pdf(bill)
+                    st.success(f"Bill generated successfully. Bill ID: {bill['bill_id']}")
 
-    with col2:
-        if st.button("Clear Cart"):
-            st.session_state.cart = []
-            st.warning("Cart cleared.")
-            st.rerun()
-else:
-    st.info("No items in cart.")
+                    with open(pdf_path, "rb") as pdf_file:
+                        st.download_button(
+                            label="Download Invoice PDF",
+                            data=pdf_file,
+                            file_name=f"invoice_{bill['bill_id']}.pdf",
+                            mime="application/pdf"
+                        )
+
+                    st.session_state.cart = []
+
+                except ValueError as error:
+                    st.error(str(error))
+    else:
+        st.info("No items in cart.")

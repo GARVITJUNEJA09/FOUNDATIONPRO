@@ -1,29 +1,162 @@
 [
-    {
-        "supplier_id": 1,
-        "supplier_name": "Sharma Cement Traders",
-        "contact_person": "Rakesh Sharma",
-        "phone": "9876543210",
-        "email": "sharma.cement@gmail.com",
-        "address": "Civil Lines, Bareilly",
-        "created_at": "2026-04-10 10:00:00"
-    },
-    {
-        "supplier_id": 2,
-        "supplier_name": "Gupta Steel Works",
-        "contact_person": "Amit Gupta",
-        "phone": "9812345678",
-        "email": "gupta.steel@gmail.com",
-        "address": "CB Ganj, Bareilly",
-        "created_at": "2026-04-10 11:00:00"
-    },
-    {
-        "supplier_id": 3,
-        "supplier_name": "FARDSDFSAF",
-        "contact_person": "AFBAEIYFBAE",
-        "phone": "44134313",
-        "email": "GARVIT @AFA",
-        "address": "DEHRADUN BIDHOLI\n",
-        "created_at": "2026-04-16 12:23:00"
-    }
+  {
+    "supplier_id": 1,
+    "supplier_name": "Apex Building Supply",
+    "contact_person": "Rahul Sharma",
+    "phone": "9876543101",
+    "email": "apex@demo.com",
+    "address": "Dehradun"
+  },
+  {
+    "supplier_id": 2,
+    "supplier_name": "Metro Construction Materials",
+    "contact_person": "Ankit Verma",
+    "phone": "9876543102",
+    "email": "metro@demo.com",
+    "address": "Haridwar"
+  },
+  {
+    "supplier_id": 3,
+    "supplier_name": "Prime Cement Traders",
+    "contact_person": "Sandeep Rawat",
+    "phone": "9876543103",
+    "email": "prime@demo.com",
+    "address": "Rishikesh"
+  },
+  {
+    "supplier_id": 4,
+    "supplier_name": "Granite Edge Suppliers",
+    "contact_person": "Neha Joshi",
+    "phone": "9876543104",
+    "email": "granite@demo.com",
+    "address": "Roorkee"
+  },
+  {
+    "supplier_id": 5,
+    "supplier_name": "Urban Steel Depot",
+    "contact_person": "Vikram Negi",
+    "phone": "9876543105",
+    "email": "urbansteel@demo.com",
+    "address": "Dehradun"
+  },
+  {
+    "supplier_id": 6,
+    "supplier_name": "National Hardware Mart",
+    "contact_person": "Pooja Thakur",
+    "phone": "9876543106",
+    "email": "national@demo.com",
+    "address": "Saharanpur"
+  },
+  {
+    "supplier_id": 7,
+    "supplier_name": "StrongBase Materials",
+    "contact_person": "Amit Bisht",
+    "phone": "9876543107",
+    "email": "strongbase@demo.com",
+    "address": "Delhi"
+  },
+  {
+    "supplier_id": 8,
+    "supplier_name": "Foundation Line Traders",
+    "contact_person": "Kavita Rana",
+    "phone": "9876543108",
+    "email": "foundation@demo.com",
+    "address": "Noida"
+  },
+  {
+    "supplier_id": 9,
+    "supplier_name": "Crestline Build Supplies",
+    "contact_person": "Mohit Chauhan",
+    "phone": "9876543109",
+    "email": "crestline@demo.com",
+    "address": "Ghaziabad"
+  },
+  {
+    "supplier_id": 10,
+    "supplier_name": "BlueRock Infrastructure Co.",
+    "contact_person": "Sneha Kapoor",
+    "phone": "9876543110",
+    "email": "bluerock@demo.com",
+    "address": "Meerut"
+  },
+  {
+    "supplier_id": 11,
+    "supplier_name": "Shivam Trade Links",
+    "contact_person": "Shivam Yadav",
+    "phone": "9876543111",
+    "email": "shivam@demo.com",
+    "address": "Lucknow"
+  },
+  {
+    "supplier_id": 12,
+    "supplier_name": "Everest Material House",
+    "contact_person": "Renu Singh",
+    "phone": "9876543112",
+    "email": "everest@demo.com",
+    "address": "Kanpur"
+  },
+  {
+    "supplier_id": 13,
+    "supplier_name": "Sigma Civil Supplies",
+    "contact_person": "Pranav Kapoor",
+    "phone": "9876543113",
+    "email": "sigma@demo.com",
+    "address": "Chandigarh"
+  },
+  {
+    "supplier_id": 14,
+    "supplier_name": "Omkar Industrial Supply",
+    "contact_person": "Omkar Joshi",
+    "phone": "9876543114",
+    "email": "omkar@demo.com",
+    "address": "Jaipur"
+  },
+  {
+    "supplier_id": 15,
+    "supplier_name": "Vertex Building Depot",
+    "contact_person": "Meenal Verma",
+    "phone": "9876543115",
+    "email": "vertex@demo.com",
+    "address": "Bhopal"
+  },
+  {
+    "supplier_id": 16,
+    "supplier_name": "Haridwar Cement Center",
+    "contact_person": "Deepak Rana",
+    "phone": "9876543116",
+    "email": "haridwarcement@demo.com",
+    "address": "Haridwar"
+  },
+  {
+    "supplier_id": 17,
+    "supplier_name": "Royal Hardware Store",
+    "contact_person": "Rohit Saini",
+    "phone": "9876543117",
+    "email": "royal@demo.com",
+    "address": "Dehradun"
+  },
+  {
+    "supplier_id": 18,
+    "supplier_name": "Trident Construction Mart",
+    "contact_person": "Neelam Joshi",
+    "phone": "9876543118",
+    "email": "trident@demo.com",
+    "address": "Noida"
+  },
+  {
+    "supplier_id": 19,
+    "supplier_name": "PrimeStone Traders",
+    "contact_person": "Yash Gupta",
+    "phone": "9876543119",
+    "email": "primestone@demo.com",
+    "address": "Gurugram"
+  },
+  {
+    "supplier_id": 20,
+    "supplier_name": "Aarav Build Supply",
+    "contact_person": "Aarav Bhandari",
+    "phone": "9876543120",
+    "email": "aarav@demo.com",
+    "address": "Dehradun"
+  }
 ]
